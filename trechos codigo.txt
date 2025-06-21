@@ -1,0 +1,52 @@
+import React from 'react';
+import { View, Text, Button, StyleSheet } from 'react-native';
+
+export default function Cabecalho() {
+    return (
+        <View style={styles.container}>
+            
+        </View>
+    );
+}
+
+const styles = StyleSheet.create({
+    container: {
+        width: '100%',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+    },
+});
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Modelo nova pagina
+import React from 'react';
+import { View, Text, Button, StyleSheet } from 'react-native';
+
+export default function TarefasDoDia({ navigation }) {
+    return (
+        <View style={styles.container}>
+            <StatusBar barStyle="dark-content" backgroundColor="#FFF" />
+            <Cabecalho navigation={navigation} />
+
+            <View style={styles.conteudo}>
+                
+            </View>
+            <MenuFooter navigation={navigation} />
+        </View>
+    );
+}
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'column',
+        backgroundColor: '#FFF',
+    },
+    conteudo: {
+        width: '100%',
+        flex: 1,
+
+        paddingHorizontal: 25,
+    },
+});
